@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const deadline = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 1);
-  const $hours = document.querySelector('.counter_hours span');
-  const $minutes = document.querySelector('.counter_minutes span');
-  const $seconds = document.querySelector('.counter_seconds span');
+
   let timer;
 
   function countdownTimer() {
@@ -10,14 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (diff <= 0) {
       clearInterval(timer);
     }
-
+    
     const hours = diff > 0 ? Math.floor(diff / 3600000) % 24 : 0;
     const minutes = diff > 0 ? Math.floor(diff / 60000) % 60 : 0;
     const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
 
-    $hours.textContent = hours < 10 ? '0' + hours : hours;
-    $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-    $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+ 
+    [...$('.counter_hours>.counter_hex>span')].forEach((el) => el.textContent = hours < 10 ? '0' + hours : hours);
+    [...$('.counter_minutes>.counter_hex>span')].forEach((el) => el.textContent = minutes < 10 ? '0' + minutes : minutes);
+    [...$('.counter_seconds>.counter_hex>span')].forEach((el) => el.textContent = seconds < 10 ? '0' + seconds : seconds) ;
 
   }
 
