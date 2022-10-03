@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Leksa Sans Pro';
+  src: local('Leksa Sans Pro Bold'), local('Leksa-Sans-Pro-Bold'),
+      url('assets/fonts/LeksaSansPro-Bold.woff2') format('woff2'),
+      url('assets/fonts/LeksaSansPro-Bold.woff') format('woff'),
+      url('assets/fonts/LeksaSansPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Leksa Sans Pro';
+  src: local('Leksa Sans Pro Regular'), local('Leksa-Sans-Pro-Regular'),
+      url('assets/fonts/LeksaSansPro.woff2') format('woff2'),
+      url('assets/fonts/LeksaSansPro.woff') format('woff'),
+      url('assets/fonts/LeksaSansPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

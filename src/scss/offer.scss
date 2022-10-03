@@ -1,0 +1,306 @@
+.offer{
+  background-image: url('assets/img/bg_image.jpg');
+  background-size: cover;
+  padding-top: 37px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 991px){
+    padding-top: 29px;
+  }
+  @media screen and (max-width: 767px){
+    
+      padding-right: 20px;
+      padding-left: 20px;    
+    
+  }
+  
+
+  .offer_card{
+    background-color: white;
+    padding: 27px 129px 0px 129px;
+    @media screen and (max-width: 991px){
+      padding: 20px 95px 0px;
+    }
+
+    @media screen and (max-width: 767px){
+      padding: 0;
+      margin: auto;
+      padding: 13px 10px 0px 10px;
+      text-align: center;
+    }
+
+
+    h1{
+      font-family: 'Leksa Sans Pro', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 42px;
+
+      @media screen and (max-width: 991px){
+        font-size: 30px;
+        line-height: 32px;
+      }
+
+      @media screen and (max-width: 767px){
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+    p.offer_caption{
+      color:#c68e64;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      margin: 0;
+      line-height: 27px;
+      max-width: 460px;
+      @media screen and (max-width: 991px){
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 360px;
+      }
+
+      @media screen and (max-width: 767px){
+        margin: auto;
+      }
+    }
+
+    
+    .offer_form{
+      p.offer_price{
+        font-family: 'Leksa Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 0.6px;
+        @media screen and (max-width: 991px){
+          font-size: 24px;
+          letter-spacing: -0.4px;
+          margin-bottom: 10px;
+        }
+        @media screen and (max-width: 767px){
+          letter-spacing: 0.5px;
+          margin-bottom: 4px;
+          margin-top: 12px;
+        }
+        span{
+          font-weight: 700;
+        }
+        .offer_price__old{
+          text-decoration:line-through;
+        }
+        .offer_price__red{
+          color: #993535
+    
+        }
+      }
+      
+      .timer{
+        padding-left: 10px;
+        @media screen and (max-width: 767px){
+          padding: 0;
+        }
+        p.timer_caption{
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: uppercase;
+          max-width: 270px;
+          margin: 0px 0px 3px 10px;
+
+          @media screen and (max-width: 991px){
+            font-size: 12px;
+            margin: 0px 0 -2px;
+          }
+          @media screen and (max-width: 767px){
+            max-width: none;
+            margin: 0px 0 0px;
+          }
+        }
+        .counter{
+          max-width: 270px;
+          margin-left: -3px;
+
+          @media screen and (max-width: 991px){
+            max-width: 202px;
+            margin-left: -5px;
+            margin-top: 3px;
+          }
+          @media screen and (max-width: 767px){
+            margin: 0 auto;
+          }
+
+          .counter_hex {
+            position: relative;
+            img{
+              height: 60px;
+              width: 69px;
+              @media screen and (max-width: 991px){
+                height: 46px;
+                width: 53px;
+              }
+            }
+            span{
+              font-family: 'Leksa Sans Pro', sans-serif;
+              font-weight: 700;
+              font-size: 36px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              @media screen and (max-width: 991px){
+                font-size: 28px;
+              }
+            }
+          }
+          .counter_caption{
+            font-size: 14px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            @media screen and (max-width: 991px){
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .form {
+        border: none;
+        max-width: 270px;
+        margin: 11px 0px 0px 6px;
+        @media screen and (max-width: 991px){
+          max-width: 209px;
+          margin: 15px 0 0 1px;
+        }
+
+        @media screen and (max-width: 767px){
+          margin: 0 auto;
+          margin-top: 18px;
+        }
+
+        .form_input{
+          border: solid 1px #b0b0b0;
+          border-radius: 0;
+          margin-bottom: 12px;
+          height: 44px;
+          padding: 15px 20px 15px 20px;
+          @media screen and (max-width: 991px){
+            height: 32px;
+            padding: 14px 16px;
+          }
+
+        }
+
+        .form_input::placeholder{
+          color: #232323;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          @media screen and (max-width: 991px){
+            font-size: 14px;
+          }
+        }
+
+        .form_button{
+          font-size: 16px;
+          text-transform: uppercase;
+          background-color: #232323;
+          color: #ffffff;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 500;
+          border: none;
+          padding: 13px;
+          @media screen and (max-width: 991px){
+            font-size: 12px;
+            padding: 10px;
+          }
+        }
+
+  
+      }
+    }
+
+    .offer_container{
+      .offer_product{
+        img{
+          width: 240px;
+          height: 452px;
+          position: relative;
+          bottom: 50px;
+          left: 44px;
+          margin-bottom: -41px;
+          @media screen and (max-width: 991px){
+            width: 185px;
+            height: 348px;
+            bottom: 38px;
+            left: 45px;
+          }
+          @media screen and (max-width: 767px){
+            position: static;
+            width: auto;
+            height: auto;
+            margin: auto;
+            margin-top: 23px;
+
+          }
+        }
+     
+      }
+      .img_caption{
+        font-size: 16px;
+        @media screen and (max-width: 991px){
+          font-size: 12px;
+        }
+        max-width: 315px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        span.offer_product__bold{
+          font-weight: 700;
+        }
+        span.offer_product__red{
+          font-weight: 700;
+          color: #993535
+        }
+        @media screen and (max-width: 991px){
+          max-width: 245px;
+          margin-top: 0px;
+          margin-bottom: 19px;
+          
+        }
+        @media screen and (max-width: 767px){
+          margin: 0 auto;
+          margin-top: 7px;
+          margin-bottom: 9px;
+        }
+      }
+
+      .form_caption{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 16px;
+        min-width: 270px;
+        padding-right: 90px;
+        margin-left: 10px;
+          .form_caption__bold{
+            font-weight: 700;
+          }
+        @media screen and (max-width: 991px){
+          font-size: 12px;
+          margin-left: 3px;
+          padding-right: 80px;
+        }
+        @media screen and (max-width: 767px){
+          margin: 0 auto;
+          padding: 0;
+          margin-top: 7px;
+        }
+
+    
+      }
+    }
+
+  }
+
+}

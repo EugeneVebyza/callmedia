@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рецепт гор</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+          <img src="assets/img/cross.svg" alt="close">
+        </button>
+      </div>
+      <div class="toast-body">
+        <img id="toast_img" src="assets/img/visitors_toast.png" alt="visitors">
+        <p id="toast_text">Количество посетителей на сайте: </br><span>172</span></p>
+      </div>
+    </div>
+
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img src="assets/img/cross_grey.svg" alt="close">
+            </button>
+
+
+      
+                  <div class="offer_card">
+                    <div class="">
+                      <h1>
+                        Рецепт гор избавит от боли в суставах навсегда всего за 10 дней!
+                      </h1>
+                      <p class="offer_caption">
+                        Уникальный гель из маточного молочка горных пчел быстро снимет боль
+                        в суставах!
+                      </p>
+                    </div>
+        
+                    <div class="offer_container d-flex flex-column flex-md-row flex-wrap ">
+                      <div class="offer_form order-md-0 order-1">
+                        <p class="offer_price">
+                          Всего за <span class="offer_price__old">3960 руб.</span>
+                          <span class="offer_price__red">990 руб.</span>
+                        </p>
+        
+                        <div class="timer">
+                          <p class="timer_caption">До окончания акции осталось:</p>
+                          <div class="counter d-flex justify-content-between">
+                            <div class="counter_hours">
+                              <div class="counter_hex">
+                                <img src="assets/img/hex.svg" alt="" />
+                                <span>07</span>
+                              </div>
+                              <span class="counter_caption">Часов</span>
+                            </div>
+                            <div class="counter_minutes">
+                              <div class="counter_hex">
+                                <img src="assets/img/hex.svg" alt="" />
+                                <span>47</span>
+                              </div>
+                              <span class="counter_caption">Минут</span>
+                            </div>
+                            <div class="counter_seconds">
+                              <div class="counter_hex">
+                                <img src="assets/img/hex.svg" alt="" />
+                                <span>29</span>
+                              </div>
+                              <span class="counter_caption">Секунд</span>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <form class="form d-flex flex-column" action="">
+                          <input
+                            class="form_input"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Имя"
+                          />
+                          <input
+                            class="form_input"
+                            type="text"
+                            name="tel"
+                            id="tel"
+                            placeholder="Телефон"
+                          />
+                          <input
+                            class="form_input"
+                            type="text"
+                            name="country"
+                            id="country"
+                            placeholder="Страна"
+                          />
+                          <input
+                            class="form_button"
+                            type="button"
+                            name="callback"
+                            id="callback"
+                            value="заказать звонок"
+                          />
+                      
+                        </form>
+                      </div>
+                      <div class="order-md-2 order-2">
+                        <p class="form_caption ">
+                          Сегодня уже купили:
+                          <span class="form_caption__bold">229 человек</span>
+                        </p>
+                      </div>
+                
+        
+                      <div class="offer_product d-flex align-items-center flex-column order-md-1 order-0">
+                        <img src="assets/img/sale.png" alt="product" />
+                        
+                      </div>
+        
+                      <div class="order-md-3 order-3">
+                      <p  class="img_caption ">
+                        <span class="offer_product__bold">ВНИМАНИЕ!</span> Акционное
+                        предложение ограничено. Осталось товаров со скидкой:
+                        <span class="offer_product__red">5шт.</span>
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+        </div>
+               
+      </div>
+    </div>
+
+    <header
+      class="header d-flex container justify-content-center justify-content-md-between align-items-center w-100"
+    >
+      <div class="header_logo">
+        <a href="#">
+          <img src="/assets/img/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="header_list d-none d-md-flex align-items-center flex-grow-1">
+        <div class="header_item d-flex align-items-center">
+          <img src="/assets/img/1.png" alt="" />
+            <p class="">Проверенно клиническими испытаниями</p>
+        </div>
+
+        <div class="header_item d-flex align-items-center">
+          <img src="/assets/img/2.png" alt="" />
+          <p class="">100% натуральный состав</p>
+        </div>
+
+        <div class="header_item d-flex align-items-center">
+          <img src="/assets/img/3.png" alt="" />
+          <p class="">75% скидка только сегодня</p>
+        </div>
+      </div>
+      <div class="header_feedback d-none d-md-block">
+        <button type="button" data-toggle="modal" data-target="#popup">заказать звонок</button>
+      </div>
+    </header>
+
+
+
+    <div class="offer container-fluid">
+      <div class=" container">
+        <div class="row">
+          <div class="col-xl-1 col-0"></div>
+          <div class="offer_card col-12 col-xl-10">
+            <div class="">
+              <h1>
+                Рецепт гор избавит от боли в суставах навсегда всего за 10 дней!
+              </h1>
+              <p class="offer_caption">
+                Уникальный гель из маточного молочка горных пчел быстро снимет боль
+                в суставах!
+              </p>
+            </div>
+
+            <div class="offer_container d-flex flex-column flex-md-row flex-wrap ">
+              <div class="offer_form order-md-0 order-1">
+                <p class="offer_price">
+                  Всего за <span class="offer_price__old">3960 руб.</span>
+                  <span class="offer_price__red">990 руб.</span>
+                </p>
+
+                <div class="timer">
+                  <p class="timer_caption">До окончания акции осталось:</p>
+                  <div class="counter d-flex justify-content-between">
+                    <div class="counter_hours">
+                      <div class="counter_hex">
+                        <img src="assets/img/hex.svg" alt="" />
+                        <span>07</span>
+                      </div>
+                      <span class="counter_caption">Часов</span>
+                    </div>
+                    <div class="counter_minutes">
+                      <div class="counter_hex">
+                        <img src="assets/img/hex.svg" alt="" />
+                        <span>47</span>
+                      </div>
+                      <span class="counter_caption">Минут</span>
+                    </div>
+                    <div class="counter_seconds">
+                      <div class="counter_hex">
+                        <img src="assets/img/hex.svg" alt="" />
+                        <span>29</span>
+                      </div>
+                      <span class="counter_caption">Секунд</span>
+                    </div>
+                  </div>
+                </div>
+
+                <form class="form d-flex flex-column" action="">
+                  <input
+                    class="form_input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Имя"
+                  />
+                  <input
+                    class="form_input"
+                    type="text"
+                    name="tel"
+                    id="tel"
+                    placeholder="Телефон"
+                  />
+                  <input
+                    class="form_input"
+                    type="text"
+                    name="country"
+                    id="country"
+                    placeholder="Страна"
+                  />
+                  <input
+                    class="form_button"
+                    type="button"
+                    name="callback"
+                    id="callback"
+                    value="заказать звонок"
+                  />
+              
+                </form>
+              </div>
+              <div class="order-md-2 order-2">
+                <p class="form_caption ">
+                  Сегодня уже купили:
+                  <span class="form_caption__bold">229 человек</span>
+                </p>
+              </div>
+        
+
+              <div class="offer_product d-flex align-items-center flex-column order-md-1 order-0">
+                <img src="assets/img/sale.png" alt="product" />
+                
+              </div>
+
+              <div class="order-md-3 order-3">
+              <p  class="img_caption ">
+                <span class="offer_product__bold">ВНИМАНИЕ!</span> Акционное
+                предложение ограничено. Осталось товаров со скидкой:
+                <span class="offer_product__red">5шт.</span>
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="col-xl-1 col-0"></div>
+        </div>
+      </div>
+    </div>
+    <div class="achivements container-fluid">
+      <div class="container d-flex">
+        <div class="achivements_item">
+          <img src="assets/img/badge_1.png" alt="badge 1" />
+        </div>
+        <div class="achivements_item">
+          <img src="assets/img/badge_2.png" alt="badge 2" />
+        </div>
+        <div class="achivements_item">
+          <img src="assets/img/badge_3.png" alt="badge 3" />
+        </div>
+      </div>
+    </div>
+    <div class="benefits container-fluid">
+      <div class="container d-flex flex-column align-items-center">
+        <h2>Почему нас выбирают?</h2>
+        <p>Наши преимущества.</p>
+        <div class="benefits_items d-flex justify-content-lg-between justify-content-center w-100">
+          <div class="benefits_item order-md-0 order-0">
+            <img src="assets/img/1_03.png" alt="" />
+            <p>
+              Запускает процесс регенерации поврежденных тканей за счет
+              синергического действия натуральных компонентов.
+            </p>
+          </div>
+          <div class="benefits_item order-md-1 order-3">
+            <img src="assets/img/2_03.png" alt="" />
+            <p>Содержит уникальное маточное молочко горных пчел.</p>
+          </div>
+          <div class="benefits_item order-md-2 order-4">
+            <img src="assets/img/3_03.png" alt="" />
+            <p>
+              Устраняет не только боль, но и причину болезни с помощью редкого
+              сочетания компонентов.
+            </p>
+          </div>
+          <div class="benefits_item order-md-3 order-2">
+            <img src="assets/img/4_03.png" alt="" />
+            <p>Выпущен ограниченной серией.</p>
+          </div>
+          <div class="benefits_item order-md-4 order-1">
+            <img src="assets/img/5_03.png" alt="" />
+            <p>
+              Прошел клинические испытания в Российском научно-исследовате</br>льском
+              институте им. Е. М. Александрова.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="effects container-fluid text-center">
+      <div class="container">
+        <h2 class="effects_header">Последствия болезней суставов</h2>
+        <p class="effects_header">Болезни суставов превращают жизнь человека в ад!</p>
+        <div class="row justify-content-center">
+          <div class="effects_item col-12 col-sm-4 d-flex flex-column align-items-center">
+            <div class="effects_card">
+              <img class="w-100" src="assets/img/1_04.png" alt="">
+              <p class="effects_title">Боль</p>
+              <p class="effects_caption">Невыносимая боль, скованность движений, деформация костей - это лишь некоторые симптомы артрита и артроза.</p>
+            </div>
+            
+          </div>
+
+          <div class="effects_item col-12 col-sm-4 d-flex flex-column align-items-center">
+            <div class="effects_card">
+              <img class="w-100" src="assets/img/2_04.png" alt="">
+              <p class="effects_title">инвалидность</p>
+              <p class="effects_caption">Запущенный артрит и артроз приводит человека к параличу и инвалидности!</p>
+            </div>
+          </div>
+
+          <div class="effects_item col-12 col-sm-4 d-flex flex-column align-items-center">
+            <div class="effects_card">
+              <img class="w-100" src="assets/img/3_04.png" alt="">
+              <p class="effects_title">Беспомощность</p>
+              <p class="effects_caption">Полная потеря дееспособности и жизнь без движения - вот, что вам грозит, если вы вовремя не предпримите меры!</p>
+            </div>
+          </div>
+          
+        </div>
+          <p class="effects_footer">А вы готовы до конца своих дней жить, превозмогая боль,  в постоянном страхе стать беспомощным?</p>
+      </div>
+    </div>
+    <div class="footer container-fluid">
+      <div class="container d-flex flex-column align-content-center">
+      <p class="footer_caption">ООО "Практика" ИНН 77431128959, ОГРН 5157746073580 г. Москва, ул. Клары Цеткин, д. 29, корп. 1, пом. 6, ком. 8</p>
+      <p class="footer_polit"><a href="#">Политика конфиденциальности</a></p>
+      </div>
+
+    </div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

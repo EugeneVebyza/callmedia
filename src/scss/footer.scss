@@ -1,0 +1,31 @@
+.footer{
+  background-color: #232323;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 47px 0px;
+  @media screen and (max-width: 1400px){
+    font-size: 14px;
+    padding: 35px 0px ;
+  }
+
+  @media screen and (max-width: 360px){
+    padding: 20px 0px;
+  }
+  p.footer_caption{
+    color: #cccccc;
+    text-align: center;
+  }
+  p.footer_polit {
+    text-align: center;
+    a{
+      color: #f7bc00;
+      border-bottom: 1px solid #f7bc00;
+      padding-bottom: 1px;
+      font-weight: 700;
+      @media screen and (max-width: 360px){
+        font-size: 11px;
+      }
+     
+  }  }
+}
